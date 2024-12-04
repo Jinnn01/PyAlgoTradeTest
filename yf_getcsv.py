@@ -19,9 +19,10 @@ def downloadCSV(name,period,interval):
   df_dropped.to_csv(name+period+interval+'_cleaned.csv',index=False)
 
 
-downloadCSV('MSFT','3mo','1d')
-downloadCSV('ORCL','1mo','1h')
-downloadCSV('AAPL','1d','5m')
+# downloadCSV('MSFT','3mo','1d')
+# downloadCSV('ORCL','1mo','1h')
+# downloadCSV('AAPL','1d','5m')
+downloadCSV('IBM','5y','1d')
 
 
 
