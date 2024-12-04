@@ -5,7 +5,7 @@ from pyalgotrade.bar import Frequency
 
 
 def parameters_generator():
-    instrument = ["ibm"]
+    instrument = ["TSLA"]
     entrySMA = range(150, 251)
     exitSMA = range(5, 16)
     rsiPeriod = range(2, 11)
@@ -18,6 +18,6 @@ def parameters_generator():
 if __name__ == '__main__':
     # Load the bar feed from the CSV files.
     feed = csvfeed.GenericBarFeed(frequency=Frequency.DAY)
-    feed.addBarsFromCSV("ibm", "IBM5y1d_cleaned.csv")
+    feed.addBarsFromCSV("TSLA", "TSLA3mo1d_cleaned.csv")
     # Run the server.
     server.serve(feed, parameters_generator(), "localhost", 5000)

@@ -32,4 +32,4 @@ def runStrategy(name,csvfile,frequency):
   myStrategy.run()
 
 runStrategy('AAPL','AAPL1d5m_cleaned.csv',Frequency.MINUTE)
-# runStrategy('MSFT','MSFT3mo1d_cleaned.csv',Frequency.DAY)
+runStrategy('TSLA','TSLA3mo1d_cleaned.csv',Frequency.DAY)

@@ -5,11 +5,11 @@ from pyalgotrade.stratanalyzer import returns
 import sma_crossover
 
 # Load the bar feed from the CSV file
-feed = csvfeed.GenericBarFeed(frequency=Frequency.HOUR)
-feed.addBarsFromCSV('TSLA','TSLA3mo1d_cleaned.csv')
+feed = csvfeed.GenericBarFeed(frequency=Frequency.MINUTE)
+feed.addBarsFromCSV('AAPL','AAPL1d5m_cleaned.csv')
 
 # Evaluate the strategy with the feed's bars.
-myStrategy = sma_crossover.SMACrossOver(feed, "TSLA", 15)
+myStrategy = sma_crossover.SMACrossOver(feed, "AAPL", 15)
 
 # Attach a returns analyzers to the strategy.
 returnsAnalyzer = returns.Returns()
@@ -18,7 +18,7 @@ myStrategy.attachAnalyzer(returnsAnalyzer)
 # Attach the plotter to the strategy.
 plt = plotter.StrategyPlotter(myStrategy)
 # Include the SMA in the instrument's subplot to get it displayed along with the closing prices.
-plt.getInstrumentSubplot("TSLA").addDataSeries("SMA", myStrategy.getSMA())
+plt.getInstrumentSubplot("AAPL").addDataSeries("SMA", myStrategy.getSMA())
 # Plot the simple returns on each bar.
 plt.getOrCreateSubplot("returns").addDataSeries("Simple returns", returnsAnalyzer.getReturns())
 

@@ -56,4 +56,5 @@ def run_strategy(name,csvfile,frequency,smaPeriod):
   myStrategy.run()
   print("Final portfolio value: $%.2f" % myStrategy.getBroker().getEquity())
 
-run_strategy('MSFT','MSFT3mo1d_cleaned.csv',Frequency.DAY,15)
+run_strategy('AAPL','AAPL1d5m_cleaned.csv',Frequency.MINUTE,15)
+run_strategy('TSLA','TSLA3mo1d_cleaned.csv',Frequency.DAY,15)

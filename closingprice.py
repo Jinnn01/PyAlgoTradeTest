@@ -22,7 +22,4 @@ def runStrategy(name,csvfile,frequency):
 
 print('-----AAPL-----')
 runStrategy('AAPL','AAPL1d5m_cleaned.csv',Frequency.MINUTE)
-print('-----MSFT-----')
-runStrategy('MSFT','MSFT3mo1d_cleaned.csv',Frequency.DAY)
-print('-----ORCL-----')
-runStrategy('ORCL','ORCL1mo1h_cleaned.csv',Frequency.HOUR)
+

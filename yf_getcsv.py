@@ -21,8 +21,8 @@ def downloadCSV(name,period,interval):
 
 # downloadCSV('MSFT','3mo','1d')
 # downloadCSV('ORCL','1mo','1h')
-# downloadCSV('AAPL','1d','5m')
-downloadCSV('IBM','5y','1d')
+downloadCSV('AAPL','1d','5m')
+# downloadCSV('IBM','5y','1d')
 downloadCSV('TSLA','3mo','1d')
 
 
