@@ -31,5 +31,5 @@ def runStrategy(name,csvfile,frequency):
   myStrategy = MyStrategy(feed,name)
   myStrategy.run()
 
-# runStrategy('AAPL','AAPL1d5m_cleaned.csv',Frequency.MINUTE)
-runStrategy('MSFT','MSFT3mo1d_cleaned.csv',Frequency.DAY)
+runStrategy('AAPL','AAPL1d5m_cleaned.csv',Frequency.MINUTE)
+# runStrategy('MSFT','MSFT3mo1d_cleaned.csv',Frequency.DAY)
