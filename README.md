@@ -3,6 +3,7 @@
 This project is for testing pyalgotrade library
 
 Install libraries
+
 `pip install pyalgotrade`
 
 Doc:
@@ -18,22 +19,22 @@ Using yfinance for stock historical prices
 Convert dataframe to csv file -> use `csvFeed.GenericBarFeed()`
 
 1. print closing price
-   closingprice.py
+   `closingprice.py`
 
 2. Print sma price
-   smaprice.py
+   `smaprice.py`
 
 3. Print SMA & RSI price
-   sma_rsi_price.py
+   `sma_rsi_price.py`
 
 4. Mock trading
-   trading.py
+   `trading.py`
 
 5. Optimizing
-   rsi2.py
-   rsi2_server.py
-   rsi2_woker.py
+   `rsi2.py`
+   `rsi2_server.py`
+   `rsi2_woker.py`
 
 6. Plot
-   sma_crossover.py
-   sma_crossover_plot.py
+   `sma_crossover.py`
+   `sma_crossover_plot.py`
